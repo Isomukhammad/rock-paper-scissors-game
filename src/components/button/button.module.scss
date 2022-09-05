@@ -1,0 +1,33 @@
+.div{
+    background-color: hsl(230, 89%, 65%);
+    width: fit-content;
+    padding: 1em;
+    border-radius: 50%;
+    border-bottom: 7px solid hsl(230, 89%, 40%);
+
+    .color{
+        border-top: 5px solid rgb(213, 213, 213);
+        background-color: white;
+        padding: .5em 1em;
+        border-radius: 50%;
+    }
+}
+
+.active{
+    animation: click 0.2s;
+}
+
+@keyframes click {
+    0% {
+        border-bottom: 7px solid hsl(230, 89%, 40%);
+    }
+    
+    50% {
+        border-bottom: 0;
+        margin-top: 10px;
+    }
+
+    100%{
+        border-bottom: 7px solid hsl(230, 89%, 40%);
+    }
+}
