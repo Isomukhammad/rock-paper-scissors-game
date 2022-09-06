@@ -1,8 +1,12 @@
+import { useSelector } from 'react-redux';
 import {ReactComponent as Logo} from '../../assets/logo.svg'
+import { selectScore } from '../../store/score/score.selector';
 
 import styles from './scoreboard.module.scss';
 
-const Scoreboard = ({score}) => {
+const Scoreboard = () => {
+    const score = useSelector(selectScore);
+
     return(
         <div className = {styles.div}>
             <div className = {styles.title}>

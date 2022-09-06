@@ -1,9 +1,11 @@
 .div{
-    background-color: hsl(230, 89%, 65%);
     width: fit-content;
     padding: 1em;
     border-radius: 50%;
-    border-bottom: 7px solid hsl(230, 89%, 40%);
+ 
+    &:active{
+        animation: click linear 1s;
+    }
 
     .color{
         border-top: 5px solid rgb(213, 213, 213);
@@ -14,12 +16,12 @@
 }
 
 .active{
-    animation: click 0.2s;
+    animation: click 0.1s;
 }
 
 @keyframes click {
     0% {
-        border-bottom: 7px solid hsl(230, 89%, 40%);
+        border-bottom: 7px;
     }
     
     50% {
@@ -28,6 +30,6 @@
     }
 
     100%{
-        border-bottom: 7px solid hsl(230, 89%, 40%);
+        border-bottom: 7px;
     }
 }

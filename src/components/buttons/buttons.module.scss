@@ -1,8 +1,13 @@
 .div{
     margin: 5em 1em;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 115px 115px;
+    grid-template-rows: 120px 110px;
     gap: 2em;
+    background-image: url('../../assets/bg-triangle.svg');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
 
     div:nth-child(3){
         margin-left: auto;

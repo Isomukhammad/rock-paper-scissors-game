@@ -1,12 +1,36 @@
 import Button from '../button/button.component';
+
+import {ReactComponent as Triangle} from '../../assets/bg-triangle.svg'
+
 import styles from './buttons.module.scss';
 
 const Buttons = () => {
+    const types = [
+        {
+            'id': 0,
+            'type': 'paper'
+        }, 
+        {
+            'id': 1,
+            'type': 'scissor'
+        },
+        {
+            'id': 2,
+            'type': 'rock'
+        }
+    ];
+
     return(
         <div className={styles.div}>
-            <Button />
-            <Button />
-            <Button />
+        {
+            types.map((type) => (
+                <Button 
+                    key = {type.id} 
+                    type = {type.type}
+                    types = {types}
+                />
+            ))
+        }
         </div>
     )
 }

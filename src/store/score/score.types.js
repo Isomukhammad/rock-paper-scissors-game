@@ -1,0 +1,4 @@
+export const SCORE_ACTION_TYPE = {
+    SET_SCORE: "SET_SCORE",
+    SET_ACTION: "SET_ACTION"
+}
