@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 
 import { selectAction, selectScore } from '../../store/score/score.selector';
-import { setAction, setScore } from '../../store/score/score.actions';
+import { setAction, setOpponentChoice, setPlayerChoice, setResult, setScore } from '../../store/score/score.actions';
 
 import checkResult from '../../utils/check-result';
 
@@ -21,11 +21,13 @@ const Button = ({type, types}) => {
         if(action === true) {
             const random = Math.floor(Math.random() * types.length);
             const result = checkResult(type, types[random].type);
-            console.log(result);
             const newScore = score + result;
             dispatch(setAction(false));
+            dispatch(setPlayerChoice(type));
+            dispatch(setOpponentChoice(types[random].type));
+            dispatch(setResult(result));
             dispatch(setScore(newScore));
-        } return false;
+        } 
     };
 
     return(

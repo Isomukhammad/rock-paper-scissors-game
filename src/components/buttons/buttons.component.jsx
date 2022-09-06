@@ -1,3 +1,5 @@
+import { useDispatch } from 'react-redux';
+
 import Button from '../button/button.component';
 
 import {ReactComponent as Triangle} from '../../assets/bg-triangle.svg'
@@ -5,6 +7,8 @@ import {ReactComponent as Triangle} from '../../assets/bg-triangle.svg'
 import styles from './buttons.module.scss';
 
 const Buttons = () => {
+    const dispatch = useDispatch();
+
     const types = [
         {
             'id': 0,

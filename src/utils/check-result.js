@@ -37,7 +37,7 @@ const checkResult = (choice, random) => {
         }
 
         if(random === 'paper'){
-            return 0
+            return -1
         }
     }
 }
