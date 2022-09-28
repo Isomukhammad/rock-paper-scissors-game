@@ -1,6 +1,6 @@
 # Rock, Paper, Scissors game
 
-## [Live Demo (currently in development)](https://isomukhammad.github.io/rock-paper-scissors-game/)
+## [Live Demo](https://isomukhammad.github.io/rock-paper-scissors-game/)
 
 ### Design Preview
 
